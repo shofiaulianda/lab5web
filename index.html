@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5 - JavaScript Dasar</title>
+</head>
+<body>
+
+    <h1>Praktikum 5: JavaScript Dasar</h1>
+    <p>Latihan JavaScript dan Manipulasi HTML</p>
+
+    <section>
+        <h2>Latihan 1 — Hello World</h2>
+        <p id="pesan">Konten awal.</p>
+        <button onclick="latihan1()">Jalankan Latihan 1</button>
+    </section>
+    <section>
+        <h2>Latihan 2 — Input Nama</h2>
+        <button onclick="latihan2()">Masukkan Nama</button>
+    </section>
+    
+    <section>
+        <h2>Latihan 3 — Operasi Aritmetika</h2>
+        <input type="number" id="angkaA" placeholder="Angka pertama">
+        <input type="number" id="angkaB" placeholder="Angka kedua">
+        <button onclick="latihan3()">Hitung</button>
+        <p id="hasil3"></p>
+    </section>
+
+    <section>
+        <h2>Latihan 4 — If Else</h2>
+        <input type="number" id="nilai" placeholder="Masukkan nilai">
+        <button onclick="latihan4()">Periksa Nilai</button>
+        <p id="hasil4"></p>
+    </section>
+
+    <section>
+        <h2>Latihan 5 — Switch Case</h2>
+        <input type="number" id="pilihan" placeholder="Masukkan angka 1-5">
+        <button onclick="latihan5()">Tampilkan Pilihan</button>
+        <p id="hasil5"></p>
+    </section>
+
+    <section>
+        <h2>Latihan 6 — Genap atau Ganjil</h2>
+        <input type="number" id="bilangan" placeholder="Masukkan bilangan bulat">
+        <button onclick="latihan6()">Periksa Bilangan</button>
+        <p id="hasil6"></p>
+    </section>
+
+    <section>
+        <h2>Latihan 7 — Mengubah Warna Background</h2>
+        <button onclick="latihan7('lightgreen')">Hijau</button>
+        <button onclick="latihan7('lightblue')">Biru</button>
+        <button onclick="latihan7('lightpink')">Merah Muda</button>
+    </section>
+
+    <section>
+        <h2>Latihan 8 — Menu Makanan</h2>
+
+        <label>
+            <input type="checkbox" class="menu" value="15000">
+            Nasi Goreng — Rp15.000
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="menu" value="10000">
+            Mie Ayam — Rp10.000
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="menu" value="5000">
+            Es Teh — Rp5.000
+        </label>
+
+        <p>Total Harga: Rp<span id="total">0</span></p>
+    </section>
+
+    <section>
+        <h2>Mini Project — Kalkulator Nilai Mahasiswa</h2>
+
+        <label>Nilai Tugas:</label>
+        <input type="number" id="tugas" placeholder="0-100">
+        <br>
+
+        <label>Nilai UTS:</label>
+        <input type="number" id="uts" placeholder="0-100">
+        <br>
+
+        <label>Nilai UAS:</label>
+        <input type="number" id="uas" placeholder="0-100">
+        <br>
+
+        <button onclick="hitungNilai()">Hitung Nilai Akhir</button>
+        <p id="hasilNilai"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
